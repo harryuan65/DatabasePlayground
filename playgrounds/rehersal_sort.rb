@@ -1,3 +1,4 @@
+# https://caseyscarborough.com/blog/2013/07/22/benchmarking-your-ruby-code/
 # bmbm: make rehersal first to compare when memo allocation could affect benchmark results
 # Create an array of 1,000,000 random digits
 array = (1..1000000).map { rand }
