@@ -15,6 +15,9 @@ gem install bundler -v '2.2.22'
 bundle install
 ```
 
+## References
+
+[Using AR standalone](https://makandracards.com/makandra/32401-activerecord-how-to-use-activerecord-standalone-within-a-ruby-script)
 ## Execute
 
 ```ruby
