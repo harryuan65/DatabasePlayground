@@ -1,0 +1,12 @@
+# require: rubocop-rails
+
+AllCops:
+  DisabledByDefault: true
+  TargetRubyVersion: 3.0.2
+
+Style:
+  GlobalVars:
+    AllowedVariables:
+      - $global
+Metrics/MethodLength:
+  Enabled: false
