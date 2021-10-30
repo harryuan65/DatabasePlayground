@@ -1,4 +1,4 @@
-# Database Playground
+# Ruby Database Playground
 
 Using standalone ActiveRecord to play around with postgresql.
 
@@ -8,6 +8,7 @@ Using standalone ActiveRecord to play around with postgresql.
 |---|---|
 |Ruby|3.0.2|
 |bundler|2.2.22|
+|postgresql|any|
 
 ```ruby
 gem install bundler -v '2.2.22'
