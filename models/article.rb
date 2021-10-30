@@ -3,10 +3,13 @@ ActiveRecord::Schema.define do
     t.column :title, :string, null: false
     t.column :content, :text, default: '', null: false
     t.column :state, :string, default: 'published'
+    t.column :user_id, :integer
   end
 end
 
 class Article < ActiveRecord::Base
+  belongs_to :user
+
   ['published', 'archived'].each do |state_type|
     define_method "#{state_type}?" do
       state == state_type
@@ -22,3 +25,7 @@ class Article < ActiveRecord::Base
   end
 end
 
+# ActiveRecord::Base.connection.change_table :articles do |t|
+#   t.column :user_id, :integer
+# end
+# Article.update_all("user_id=floor(random()*4000)::int")
