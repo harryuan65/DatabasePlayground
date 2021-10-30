@@ -8,7 +8,7 @@ end
 
 class Article < ActiveRecord::Base
   ['published', 'archived'].each do |state_type|
-    define_method "#{state_type}?" do |args|
+    define_method "#{state_type}?" do
       state == state_type
     end
   end
