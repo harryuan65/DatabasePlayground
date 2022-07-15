@@ -24,6 +24,7 @@ GEM
     pry (0.14.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
+    psych (3.3.2)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
 
@@ -36,6 +37,7 @@ DEPENDENCIES
   faker
   pg
   pry
+  psych
 
 RUBY VERSION
    ruby 3.0.3p157
